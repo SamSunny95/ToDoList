@@ -39,7 +39,7 @@ public class FileStream {
 
             FileInputStream fInput = c.openFileInput(filename);
             ObjectInputStream oInput = new ObjectInputStream(fInput);
-            list = oInput.readObject();
+            list = (ArrayList<String>) oInput.readObject();
 
         } catch (FileNotFoundException e) {
 
