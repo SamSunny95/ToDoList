@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
-        layout_width = "match_parent"
-        layout_height = "wrap_content"
-        orientation = "horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
 
         <EditText
-            id = "textBox"
-            hint = "Enter Item"
-            
+            android:id = "@+id/textBox"
+            android:hint = "Enter Item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
             >
 
         </EditText>
 
-        <Button>
+        <Button
+            android:id="@+id/addBtn"
+            android:text="ADD"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"            >
 
         </Button>
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </ListView>
+
+</LinearLayout>
