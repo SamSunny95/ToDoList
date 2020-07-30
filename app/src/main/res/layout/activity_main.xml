@@ -14,12 +14,14 @@
         <EditText
             id = "textBox"
             hint = "Enter Item"
+            
             >
 
         </EditText>
 
-        <Button
-            ></Button>
+        <Button>
+
+        </Button>
 
     </LinearLayout>
 
