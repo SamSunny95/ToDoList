@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 public class FileStream {
 
+    // this will be the file where the list items will be saved to
     public static final String filename = "list.dat";
 
     public  static  void writeToFile(ArrayList<String> list, Context c){
@@ -52,6 +53,7 @@ public class FileStream {
             e.printStackTrace();
         }
 
+        // returns an Arraylist containing the To Do List items.
         return list;
 
     }

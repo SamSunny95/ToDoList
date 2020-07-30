@@ -5,14 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
+    <!-- Main Layout of the App -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
+        <!-- Textbox to enter items -->
         <EditText
             android:id = "@+id/textBox"
             android:hint = "Enter Item"
@@ -23,22 +27,26 @@
 
         </EditText>
 
+        <!-- Button to add items to the list -->
         <Button
             android:id="@+id/addBtn"
             android:text="ADD"
             android:layout_height="wrap_content"
             android:layout_width="0dp"
-            android:layout_weight="2"            >
+            android:layout_weight="2"
+            >
 
         </Button>
 
     </LinearLayout>
 
+    <!-- List of saved items -->
     <ListView
         android:id="@+id/listView"
         android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        >
 
     </ListView>
 
